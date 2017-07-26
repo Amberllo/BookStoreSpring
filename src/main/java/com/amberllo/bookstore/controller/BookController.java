@@ -1,4 +1,4 @@
-package com.amberllo.bookstore;
+package com.amberllo.bookstore.controller;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BookController {
 
-    @RequestMapping("/greeting/{name}")
+    @RequestMapping("/test/{name}")
     public String greeting(@PathVariable("name") String name) {
         return "hello, " + name;
     }
